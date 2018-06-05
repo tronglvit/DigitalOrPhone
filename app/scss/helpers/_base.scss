@@ -1,0 +1,58 @@
+//Animation
+@keyframes animation-to-top {
+    from {
+        top: 100%;
+        opacity: 1;
+    }
+    to {
+        top: 150%;
+        opacity: 0;
+
+    }
+}
+@keyframes animation-to-bottom {
+    from {
+        top: 150%;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+
+    }
+}
+// Sắp xếp gird layout
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Xử lý kí tự 
+.uppercase {
+    text-transform: uppercase;
+}
+// Xử lý ảnh
+img{
+    object-fit: cover;
+}

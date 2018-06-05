@@ -1,0 +1,85 @@
+.header {
+    &__top {
+        border-bottom: 1px solid #e6e6e6;
+        &__block {
+            &--child {
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                -webkit-box-shadow: 0 0px 16px rgba(0, 0, 0, 0.19);
+                -moz-box-shadow: 0 0px 16px rgba(0, 0, 0, 0.19);
+                box-shadow: 0 0px 16px rgba(0, 0, 0, 0.19);
+                animation-name: animation-to-bottom;
+                animation-duration: 0.2s;
+                animation-direction: reverse;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+        }
+        &__list {
+            padding: 15px;
+            border-right: 1px solid #e6e6e6;
+            position: relative;
+            &:hover .header__top__block--child {
+                animation-name: animation-to-top;
+                animation-duration: 0.4s;
+                animation-direction: reverse;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &--child {
+                padding-bottom: 10px;
+            }
+        }
+        &__list:last-child {
+            border-right: none;
+        }
+        &__link {
+            color: #242424;
+            height: 100%;
+            &:hover {
+                color: #f89a20;
+                text-decoration: none;
+            }
+        }
+    }
+    &__middle {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__search {
+            padding: 5px 0;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border: 1px solid #f89a20;
+            &__input {
+                height: 40px;
+                border: none;
+                margin-left: 20px;
+                margin-right: 10px;
+                width: 60%;
+                  border-right: 1px solid #e6e6e6;
+                &:hover {
+                    border: none;
+                    outline: none;
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+              
+            }
+            &__dropdown {
+                width: 39%;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

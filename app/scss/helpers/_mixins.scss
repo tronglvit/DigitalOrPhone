@@ -1,0 +1,45 @@
+@mixin set-font($font-size, $color, $line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+}
+
+/*  Media Query */
+
+@mixin desktop-large {
+    @media (min-width: 1281px) {
+        @content;
+    }
+}
+
+@mixin desktop-normal {
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin tablets-large {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablets-landscape {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin tablets-normal {
+    @media (min-width: 481px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+/* End */
