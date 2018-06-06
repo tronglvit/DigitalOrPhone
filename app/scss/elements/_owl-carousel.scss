@@ -1,0 +1,58 @@
+.owl__carousel__top {
+    max-height: 400px;
+}
+
+.owl-stage-outer {
+    max-height: 400px;
+}
+
+.owl-carousel .owl-item:hover .owl-prev {
+    opacity: 1;
+}
+
+.owl-prev {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 45%;
+    border-radius: 50% !important;
+    margin-left: 5px !important;
+    display: block !important;
+    border: 0px solid black;
+    background-color: white !important;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    & span {
+        font-size: 48px;
+        color: black;
+        line-height: 24px;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.owl-next {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    right: 0;
+    border-radius: 50% !important;
+    display: block !important;
+    border: 0px solid black;
+    background-color: white !important;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    & span {
+        font-size: 48px;
+        color: black;
+        line-height: 24px;
+    }
+    &:focus {
+        outline: none;
+    }
+}

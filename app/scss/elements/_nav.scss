@@ -1,0 +1,42 @@
+.nav {
+    background-color: #ffc173;
+    &__block {
+        width: 100%;
+        padding: 0;
+    }
+    &__list {
+        @include display-flex-center(column, center, center);
+        padding: 10px 20px 0 20px;
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+        &.active {
+            background-color: white;
+        }
+    }
+    &__link {
+        color: black;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.company {
+    margin-left: 15px;
+    margin-top: 15px;
+    @include display-flex(row, flex-start);
+    &__block {
+        @include display-flex(row, flex-start);
+    }
+    &__list{
+        padding: 0 15px;
+        & a{
+            &:hover{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

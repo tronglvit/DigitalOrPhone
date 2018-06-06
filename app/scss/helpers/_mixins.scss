@@ -4,6 +4,20 @@
     line-height: $line-height;
 }
 
+@mixin display-flex($gird,$diplay) {
+    display: flex;
+    flex-direction: $gird;
+    justify-content: $diplay;
+}
+
+@mixin display-flex-center($gird,$diplay,$align) {
+    display: flex;
+    flex-direction: $gird;
+    justify-content: $diplay;
+    align-items: $align;
+}
+
+
 /*  Media Query */
 
 @mixin desktop-large {

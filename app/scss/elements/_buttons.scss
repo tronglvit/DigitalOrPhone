@@ -1,0 +1,39 @@
+.btn {
+    &--search {
+        background-color: #f89a20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 10%;
+    }
+    &:hover {
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+    &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.icon {
+    &--search {
+        font-size: 16px;
+        color: white;
+    }
+    &--cart{
+        font-size: 28px;
+        color: #999;
+    }
+    &--nav{
+        font-size: 24px;
+    }
+}
